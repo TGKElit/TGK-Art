@@ -1,30 +1,89 @@
-body {
-    background-color: #333;
+* {
+    box-sizing: border-box;
 }
 
-ul {
-    width: 100%;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+nav {
     position: fixed;
-    list-style-type: none;
+    width: 100vw;
+    height: 50px;
+    background-color: #999;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    border-bottom-width: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+nav a {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 99%;
+    border-color: #999;
+
+}
+
+nav a:hover {
     background-color: #222;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
+}
+
+
+
+h1 {
     text-align: center;
-    padding: 14px 16px;
-    padding-right: 100px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+    margin: 0;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.homeSection {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 90px;
+}
+
+.homeSection img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+.gallerySection {
+    display: grid;
+    position: relative;
+    top: 90px;
+    border-style: solid;
+    border-width: 10px 0px 0px 0px;
+    border-color: #222;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.gallerySection img {
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;    
+}
+
+.gallerySection img:hover {
+    transform: scale(1.1);
+}
+
+.clickable {
+    cursor: pointer;
+}
