@@ -8,7 +8,8 @@ body {
     background-color: #333;
 }
 nav {
-    position: fixed;
+    position: sticky;
+    top: 0px;
     width: 100vw;
     height: 50px;
     background-color: #999;
@@ -18,6 +19,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    z-index: 1;
 
 }
 
@@ -38,14 +40,26 @@ nav a:hover {
     background-color: #222;
 }
 
-
-
 h1 {
+    margin: 24px;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #fff;
+}
+
+h2 {
     text-align: center;
     margin: 0;
     font-size: 20px;
     font-family: "Roboto";
     font-weight: 400;
+}
+
+h3 {
+    font-size: 36px;
+    font-family: "Roboto";
+    font-weight: 700;
 }
 
 .homeSection {
@@ -64,26 +78,70 @@ h1 {
 
 
 
-.gallerySection {
+.gallerySection, .animationGrid {
     display: grid;
-    position: relative;
     top: 90px;
-    border-style: solid;
-    border-width: 10px 0px 0px 0px;
-    border-color: #222;
     grid-template-columns: 33% 34% 33%;
+    transform: translate(0px, 100px);
 }
 
-.gallerySection img {
+
+
+.gallerySection img, .animationGrid img {
     width: 100%;
     height: 19vw;
-    object-fit: cover;    
+    object-fit: cover;
+    position: relative; 
 }
 
-.gallerySection img:hover {
-    transform: scale(1.1);
+.item {
+    width: 98%;
+    margin: auto;
+}
+
+.clickable:hover > img{
+    filter: brightness(50%);
 }
 
 .clickable {
     cursor: pointer;
+}
+
+.animationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0px, 0px);
+}
+
+section div {
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0px;
+    opacity: 0;
+    width: 100%;
+}
+
+div:hover > .overlay{
+    opacity: 100%;
+}
+
+.overlay h3 {
+    margin: 8px;
+    color: #fff;
+}
+
+.animationSection .full {
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    background-color: #222;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

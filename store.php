@@ -1,3 +1,7 @@
 <?php
 
-    require 'header.php';
+require 'header.php';
+
+?>
+
+<h1>Store</h1>
