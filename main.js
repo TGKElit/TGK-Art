@@ -27,3 +27,7 @@ function selectImage() {
     }
 
 }
+
+function openMenu() {
+    console.log("Helllo");
+}

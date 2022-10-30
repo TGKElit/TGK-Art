@@ -184,6 +184,12 @@ div:hover > .overlay{
     justify-content: space-between;
 }
 
-.filterMenu {
+.filterButton {
     margin: 24px;
 }
+
+.border {
+    height: 1px;
+    background-color: #999;
+}
+

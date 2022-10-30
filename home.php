@@ -8,6 +8,8 @@ require 'variables.php';
 
 <h1>Home</h1>
 
+<div class="border"></div>
+
 <section class="homeSection">
     <div class="clickable">
         <img src="<?= $galleryImg?>" alt="Gallery">

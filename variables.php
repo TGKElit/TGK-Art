@@ -15,9 +15,9 @@ $animations = [
 ];
 
 $images = [
-    ['title' => 'Field lake', 'source' => './images/field_lake.jpg', 'size' => 'Big'],
-    ['title' => 'Poppy Field', 'source' => './images/poppy_field.jpg', 'size' => 'Small'],
-    ['title' => 'Portrait', 'source' => './images/portrait.jpg', 'size' => 'A4'],
+    ['title' => 'Field lake', 'source' => './images/field_lake.jpg', 'size' => 'Big', 'medium' => 'oil', 'subject' => 'landscape'],
+    ['title' => 'Poppy Field', 'source' => './images/poppy_field.jpg', 'size' => 'Small', 'medium' => 'oil', 'subject' => 'landscape'],
+    ['title' => 'Portrait', 'source' => './images/portrait.jpg', 'size' => 'A4', 'medium' => 'pencil', 'subject' => 'portrait'],
     
 ];
     $galleryImg = $images[0]['source'];
