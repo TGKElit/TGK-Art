@@ -5,13 +5,20 @@ require 'header.php';
 require 'variables.php'
 
 ?>
-<h1>Gallery</h1>
+<section class="titleSection">
+    <h1>Gallery</h1>
+
+    <p class="filterMenu">Filter</p>
+</section>
 
 <section class="gallerySection">
+
+    
 <?php
+
     foreach ($images as $image) {    
         ?>
-        <div class="clickable item">
+        <div class="clickable item" onclick="selectImage()">
             <img src="<?= $image['source']?>" alt="<?= $image['title']?>">
             <div class="overlay">
                 <h3><?= $image['title']?></h3>
@@ -22,3 +29,7 @@ require 'variables.php'
     }
 ?>
 </section>
+
+<?php
+
+require 'footer.php';

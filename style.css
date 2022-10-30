@@ -1,5 +1,9 @@
 * {
     box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #fff;
 }
 
 body {
@@ -75,6 +79,7 @@ h3 {
     height: 100%;
     top: 0;
     left: 0;
+    color: rgba(0,0,0,0);
 }
 
 .homeSection img {
@@ -105,6 +110,26 @@ h3 {
 .item {
     width: 98%;
     margin: auto;
+}
+
+.selected {
+    all: unset;
+    display: flex;
+    width: unset;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+
+.selected .item {
+    margin: 0 8vw;
+    
+}
+
+.selected img {
+    width: unset;
+    height: 45vw;
+    object-fit: contain;
 }
 
 .clickable:hover > img{
@@ -152,4 +177,13 @@ div:hover > .overlay{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterMenu {
+    margin: 24px;
 }

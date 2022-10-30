@@ -22,4 +22,4 @@ $images = [
 ];
     $galleryImg = $images[0]['source'];
     $animationImg = "http://img.youtube.com/vi/$animations[0]/maxresdefault.jpg";
-    $storeImg = $images[2]['source'];
+    $storeImg = $images[1]['source'];
