@@ -2,24 +2,7 @@
 
 require 'header.php';
 
-$images = [
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-    ['title' => 'Field lake', 'source' => './images/painting.jpg', 'size' => '34x48cm'],
-];
+require 'variables.php'
 
 ?>
 <h1>Gallery</h1>
