@@ -194,6 +194,10 @@ div:hover > .overlay{
     margin: 24px;
 }
 
+.filterButton:hover {
+    background-color: #222;
+}
+
 .border {
     height: 1px;
     background-color: #999;
@@ -207,4 +211,8 @@ button {
     color: #000;
     font-size: 16px;
     margin-top: 16px;
+}
+
+.filterMenu {
+    display: none;
 }

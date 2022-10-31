@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 function filterArray($filterOptions, $images) {
     if(isset($filterOptions['oil']) || isset($filterOptions['pencil']) || isset($filterOptions['digital'])){
         if(!isset($filterOptions['oil'])) {
@@ -58,4 +60,10 @@ function filterArray($filterOptions, $images) {
         }
     }
     return $images;
+}
+
+function isChecked($filterOption) {
+    if (isset($filterOption)) {
+        return 'checked';
+    }
 }

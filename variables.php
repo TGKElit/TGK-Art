@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types = 1);
 
 $animations = [
     "C7oHALwfX38",

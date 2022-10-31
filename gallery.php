@@ -19,23 +19,32 @@ if (!empty($_GET)) {
 
 <div class="border"></div>
 
-<section class="filterMenu">
+<section class="filterMenu" id="filterMenu">
     <form action="gallery.php" method="GET">
+
         <h4>Medium</h4>
+
         <label for="oil">Oil</label>
-        <input type="checkbox" name="oil">
+        <input type="checkbox" name="oil" <?= isChecked($_GET['oil'])?>>
+
         <label for="pencil">Pencil</label>
-        <input type="checkbox" name="pencil">
+        <input type="checkbox" name="pencil" <?= isChecked($_GET['pencil'])?>>
+
         <label for="digital">Digital</label>
-        <input type="checkbox" name="digital">
+        <input type="checkbox" name="digital" <?= isChecked($_GET['digital'])?>>
+        
         <h4>Subject</h4>
+
         <label for="landscape">Landscape</label>
-        <input type="checkbox" name="landscape">
+        <input type="checkbox" name="landscape" <?= isChecked($_GET['landscape'])?>>
+
         <label for="portrait">Portrait</label>
-        <input type="checkbox" name="portrait">
+        <input type="checkbox" name="portrait" <?= isChecked($_GET['portrait'])?>>
+
         <label for="figure">Figure</label>
-        <input type="checkbox" name="figure">
+        <input type="checkbox" name="figure" <?= isChecked($_GET['figure'])?>>
         <br>
+
         <button type="submit">Apply Filter</button>
     </form>
     <div class="border"></div>

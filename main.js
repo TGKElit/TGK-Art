@@ -29,5 +29,11 @@ function selectImage() {
 }
 
 function openMenu() {
-    console.log("Helllo");
+    const filterMenu = document.getElementById('filterMenu');    
+    if(filterMenu.style.display == "block") { // if is menuBox displayed, hide it
+      filterMenu.style.display = "none";
+    }
+    else { // if is menuBox hidden, display it
+      filterMenu.style.display = "block";
+    }
 }
