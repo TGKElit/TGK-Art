@@ -21,22 +21,24 @@ if (!empty($_GET)) {
 
 <section class="filterMenu">
     <form action="gallery.php" method="GET">
-        <h2>Medium</h2>
+        <h4>Medium</h4>
         <label for="oil">Oil</label>
         <input type="checkbox" name="oil">
         <label for="pencil">Pencil</label>
         <input type="checkbox" name="pencil">
         <label for="digital">Digital</label>
         <input type="checkbox" name="digital">
-        <h2>Subject</h2>
+        <h4>Subject</h4>
         <label for="landscape">Landscape</label>
         <input type="checkbox" name="landscape">
         <label for="portrait">Portrait</label>
         <input type="checkbox" name="portrait">
         <label for="figure">Figure</label>
         <input type="checkbox" name="figure">
+        <br>
         <button type="submit">Apply Filter</button>
     </form>
+    <div class="border"></div>
 </section>
 
 

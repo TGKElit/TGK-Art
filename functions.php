@@ -1,54 +1,61 @@
 <?php
 
 function filterArray($filterOptions, $images) {
-    print_r($filterOptions);
-    $newImages = [];
+    if(isset($filterOptions['oil']) || isset($filterOptions['pencil']) || isset($filterOptions['digital'])){
+        if(!isset($filterOptions['oil'])) {
+            foreach($images as $key => $image) {
+                if ($image['medium'] === 'oil') {
+                    unset($images[$key]);
+                }
+            }
+            $images = array_values($images);
+        }
 
-    if($filterOptions['oil'] === "on") {
-        foreach($images as $image) {
-            if ($image['medium'] === 'oil') {
-                $newImages[] = $image;
+        if(!isset($filterOptions['pencil'])) {
+            foreach($images as $key => $image) {
+                if ($image['medium'] === 'pencil') {
+                    unset($images[$key]);
+                }
             }
+            $images = array_values($images);
+        }
+        
+        if(!isset($filterOptions['digital'])) {
+            foreach($images as $key => $image) {
+                if ($image['medium'] === 'digital') {
+                    unset($images[$key]);
+                }
+            }
+            $images = array_values($images);
         }
     }
-    if($filterOptions['pencil'] === "on") {
-        foreach($images as $image) {
-            if ($image['medium'] === 'pencil') {
-                $newImages[] = $image;
+    if(isset($filterOptions['landscape']) || isset($filterOptions['portrait']) || isset($filterOptions['figure'])){
+        if(!isset($filterOptions['landscape'])) {
+            foreach($images as $key => $image) {
+                if ($image['subject'] === 'landscape') {
+                    unset($images[$key]);
+                }
             }
+            $images = array_values($images);
         }
-    }
-    if($filterOptions['digital'] === "on") {
-        foreach($images as $image) {
-            if ($image['medium'] === 'digital') {
-                $newImages[] = $image;
-            }
-        }
-    }
 
-    if($filterOptions['landscape'] === "on") {
-        foreach($images as $image) {
-            if ($image['subject'] === 'landscape') {
-                $newImages[] = $image;
+        if(!isset($filterOptions['portrait'])) {
+            foreach($images as $key => $image) {
+                if ($image['subject'] === 'portrait') {
+                    unset($images[$key]);
+                }
             }
+            $images = array_values($images);
         }
-    }
-    
-    if($filterOptions['portrait'] === "on") {
-        foreach($images as $image) {
-            if ($image['subject'] === 'portrait') {
-                $newImages[] = $image;
-            }
-        }
-    }
 
-    if($filterOptions['figure'] === "on") {
-        foreach($images as $image) {
-            if ($image['subject'] === 'figure') {
-                $newImages[] = $image;
+        if(!isset($filterOptions['figure'])) {
+            foreach($images as $key => $image) {
+                if ($image['subject'] === 'figure') {
+                    unset($images[$key]);
+                }
             }
+            $images = array_values($images);
         }
     }
-
-    return $newImages;
+    return $images;
 }
