@@ -2,7 +2,7 @@ INSERT MANDATORY GIF
 
 # Project Title
 
-Portfolio Website for my art and animations, (http:/nikejohansson.se/elephant)
+Portfolio Website for my art and animations, (http://nikejohansson.se/elephant)
 
 # Installation
 
