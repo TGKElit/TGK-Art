@@ -1,4 +1,4 @@
-[<img src="./drop.gif" width="100%">]
+<img src="./drop.gif" width="80%">
 
 # Project Title
 
