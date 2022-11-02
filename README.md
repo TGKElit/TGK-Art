@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+[<img src="./drop.gif" width="100%">]
 
 # Project Title
 
