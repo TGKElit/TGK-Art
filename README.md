@@ -6,7 +6,8 @@ Portfolio Website for my art and animations, (http://nikejohansson.se/elephant)
 
 # Installation
 
-Add the installation instructions.
+Clone repository.
+Open php server in source folder (php -S localhost:8000)
 
 # Code Review
 
