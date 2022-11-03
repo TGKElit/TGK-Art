@@ -12,12 +12,14 @@ require 'variables.php';
 
 ?>
 
-<h1>Home</h1>
-
-<div class="border"></div>
-
 <main>
 
+<h1>Home</h1>
+
+    <div class="border"></div>
+
+
+    <!--Three clickable images that navigate to respective pages.-->
     <section class="homeSection">
         <div class="clickable">
             <img src="<?= $galleryImg?>" alt="Gallery">

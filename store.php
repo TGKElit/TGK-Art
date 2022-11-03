@@ -12,10 +12,10 @@ require 'variables.php';
 
 ?>
 
-<h1>Store</h1>
-
-<div class="border"></div>
 <main>
+    <h1>Store</h1>
+
+    <div class="border"></div>
 
     <?php
 
