@@ -13,13 +13,11 @@ function filterArray($filterOptions, $images) {
 function filterCriterion($filterOptions, $type, $images) {
     if (isset($filterOptions[$type])){
         foreach($filterOptions[$type] as $optionKey => $filterOption) {
-            if(isset($filterOption)) {
                 foreach($images as $key => $image) {
                     if ($image[$type] === $optionKey) {
                         $newImages[] = $images[$key];
                     }
                 }
-            }
         }
     } else {
         $newImages = $images;
