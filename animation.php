@@ -8,7 +8,7 @@ require 'header.php';
 
 require 'nav.php';
 
-require 'variables.php'
+require 'data.php'
 
 ?>
 <main>
@@ -19,7 +19,7 @@ require 'variables.php'
 
     <section class="animationGrid">
         <?php
-        foreach ($animations as $key => $animation) {    
+        foreach ($animations as $key => $animation) {
             ?>
             <a class="clickable item animationLink" href="https://www.youtube.com/watch?v=<?= $animation?>">
                 Link to external youtube video.

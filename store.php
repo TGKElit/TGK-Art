@@ -8,7 +8,7 @@ require 'header.php';
 
 require 'nav.php';
 
-require 'variables.php';
+require 'data.php';
 
 ?>
 
